@@ -2,7 +2,7 @@
     position: absolute;
     right: 35px;
     top: 35px;
-    z-index: 3;
+    z-index: 5;
     @include easeOut;
     cursor: pointer;
 
@@ -65,7 +65,7 @@
     &-nav{
         margin: 0;
         padding: 0;
-        background: darken($primaryColor, $amount: 5);
+        background: darken($primaryColor, $amount: 6);
         list-style: none;
 
         transform: translate3d(0, -100%, 0); // - 100 make it start from way up
@@ -81,7 +81,7 @@
         margin: 0;
         padding: 0;
         background: $primaryColor;
-    
+        
         transform: translate3d(0, 100%, 0); // - 100 make it start from way up
         @include easeOut;
 
@@ -95,6 +95,7 @@
             width: 250px;
             height: 250px;
             background: url('../img/portrait.jpg');
+            background-size: cover;
             border: solid 3px $secondaryColor;
             border-radius: 50%;
         }
