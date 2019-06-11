@@ -6,3 +6,6 @@ I will be using the lessons from this very site to create a personal profile web
 # tools used
 scss
 html5
+
+# online demo
+[Gitpages](https://byarustev.github.io/portifolio/dist) 
