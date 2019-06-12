@@ -1,6 +1,5 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
 
 *{
     // this makes the padding not affect the width and height
@@ -14,7 +13,7 @@ body{
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
-    color: white;
+    color: set-text-color($primaryColor);
 }
 
 // headings
@@ -35,7 +34,7 @@ h1, h2, h3{
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: set-text-color($primaryColor);
 }
 
 header{
@@ -50,8 +49,8 @@ header{
 
 main{
     padding: 4rem;
-    height: 100%;
-
+    // height: 100%;
+    height: calc(100vh-55px);
     .social-icons{
         a{
             padding: 0.4rem;
@@ -69,3 +68,55 @@ main{
         }
     }
 }
+
+.about-info{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+    'bioimage bio bio'
+    'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bio-image{
+    grid-area: bioimage;
+    margin: auto;
+    border: solid 3px $secondaryColor;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+.bio{
+    grid-area: bio;
+}
+
+.job-1{
+    grid-area: job1;
+}
+
+.job-2{
+    grid-area: job2;
+}
+
+.job-3{
+    grid-area: job3;
+}
+
+.job{
+    background: lighten($color: $primaryColor, $amount: 5);
+    padding: 10px;
+    border-bottom: 3px solid $secondaryColor;
+}
+
+
+#main-footer{
+    text-align: center;
+    color: set-text-color($primaryColor);
+    background: darken($color: $primaryColor, $amount: 10);
+    padding: 1rem;
+    height: 55px;
+}
+
+
+@import 'mobile';

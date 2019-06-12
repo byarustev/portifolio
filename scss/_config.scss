@@ -1,6 +1,7 @@
 // partials start with an underscore
-$primaryColor:#444;
-$secondaryColor: #eeca1a;
+$primaryColor:#2f3542;
+// #192a56 2f3542
+$secondaryColor: #2980b9;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
 $background-opacity:0.7;
@@ -30,6 +31,14 @@ $background-opacity:0.7;
             }
 
         }
+    }
+}
+
+@function set-text-color($color){
+    @if(lightness($color)>40){
+        @return #000;
+    }@else{
+        @return #fff;
     }
 }
 

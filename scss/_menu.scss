@@ -9,7 +9,7 @@
     .btn-line{
         width: 35px;
         height: 3px;
-        background: #fff;
+        background: set-text-color($primaryColor);;
         margin: 0 0 5px 0;
         @include easeOut;
     }
@@ -45,7 +45,7 @@
     top: 0;
     right: 0;
     width: 100%;
-    opacity: 0.8;
+    // opacity: 0.9;
     visibility: hidden;
 
     &.show{
@@ -94,7 +94,7 @@
             z-index: 4;
             width: 250px;
             height: 250px;
-            background: url('../img/portrait.jpg');
+            background: url('../img/steve_square.jpg');
             background-size: cover;
             border: solid 3px $secondaryColor;
             border-radius: 50%;
@@ -120,7 +120,7 @@
         font-size: 30px;
         text-transform: uppercase;
         padding: 1rem 0;
-        color: #fff;
+        color: set-text-color($primaryColor);
         text-decoration: none;
         @include easeOut;
         &:hover{
