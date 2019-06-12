@@ -140,7 +140,7 @@ header {
 
 main {
   padding: 4rem;
-  height: calc(100vh-55px); }
+  min-height: calc(100vh - 55px); }
   main .social-icons a {
     padding: 0.4rem; }
     main .social-icons a:hover {
@@ -182,9 +182,6 @@ main {
   padding: 10px;
   border-bottom: 3px solid #2980b9; }
 
-#work {
-  height: calc(100vh-55px); }
-
 .projects {
   display: grid;
   grid-gap: 20px;
@@ -211,6 +208,26 @@ main {
 
 .btn-dark {
   background: black; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px solid #fff;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    cursor: pointer; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #2980b9;
+      transition: all 0.5s ease-out;
+      color: #000; }
+      .boxes div:hover span {
+        color: #fff; }
 
 #main-footer {
   text-align: center;
