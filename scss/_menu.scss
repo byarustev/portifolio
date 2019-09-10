@@ -17,7 +17,7 @@
     // rotate lines into x
     &.close{
         transform: rotate(180deg);
-        
+
         .btn-line{
             //line 1 - rotate
             &:nth-child(1){
@@ -35,8 +35,8 @@
                 transform: rotate(-45deg) translate(7px, -6px);
             }
         }
-        
-        
+
+
     }
 }
 
@@ -81,8 +81,8 @@
         margin: 0;
         padding: 0;
         background: $primaryColor;
-        
-        transform: translate3d(0, 100%, 0); // - 100 make it start from way up
+
+        transform: translate3d(0, 100%, 0); // - 100 make it start from way down
         @include easeOut;
 
         &.show{
@@ -104,7 +104,7 @@
     &-item{
         transform: translate3d(600px, 0, 0);
         @include easeOut;
-        
+
         &.show{
             transform: translate3d(0,0,0);
         }
